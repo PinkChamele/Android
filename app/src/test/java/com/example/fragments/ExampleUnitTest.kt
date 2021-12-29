@@ -1,4 +1,4 @@
-package com.example.androidapp
+package com.example.fragments
 
 import org.junit.Test
 

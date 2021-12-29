@@ -1,86 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RadioGroup
-        android:id="@+id/radio_group_types"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="false"
-        android:layout_marginLeft="40sp"
-        android:layout_marginTop="50sp">
+    <FrameLayout
+        android:id="@+id/radio_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/message_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <RadioButton
-            android:id="@+id/radio_type1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Type1" />
+    </FrameLayout>
 
-        <RadioButton
-            android:id="@+id/radio_type2"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:text="Type2" />
+    <FrameLayout
+        android:id="@+id/message_fragment"
+        android:layout_width="413dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_buttons">
 
-        <RadioButton
-            android:id="@+id/radio_type3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Type3" />
-    </RadioGroup>
+    </FrameLayout>
 
-    <RadioGroup
-        android:id="@+id/radio_group_firms"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="300sp"
-        android:layout_marginTop="50sp">
-
-        <RadioButton
-            android:id="@+id/radio_firm1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Firm1" />
-
-        <RadioButton
-            android:id="@+id/radio_firm2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Firm2" />
-
-        <RadioButton
-            android:id="@+id/radio_firm3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Firm3" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/button_ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
-        android:text="Ok" />
-
-    <Button
-        android:id="@+id/button_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"/>
-
-    <TextView
-        android:id="@+id/text_view_selected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
-        android:text=""
-        android:textSize="20sp" />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
