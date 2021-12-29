@@ -34,6 +34,9 @@ class RadioButtons() : Fragment() {
             {
                 val radioButtonFirm = view.findViewById<RadioButton>(binding.radioGroupFirms.checkedRadioButtonId)
                 val radioButtonType = view.findViewById<RadioButton>(binding.radioGroupTypes.checkedRadioButtonId)
+                realm.executeTransaction { realm ->
+                    realm.insert(Choice(firm = radioButtonFirm.text.toString(), type = radioButtonType.text.toString(), _partition = "123"))
+                }
                 dataModel.message.value = "Your choice is: " + radioButtonType.text + " and " + radioButtonFirm.text
             }
         }

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LifecycleOwner
 import com.example.fragments.databinding.FragmentMessageBinding
+import com.example.fragments.databinding.FragmentRadioButtonsBinding
 
 class MessageFragment : Fragment() {
     private val dataModel: DataModel by activityViewModels()

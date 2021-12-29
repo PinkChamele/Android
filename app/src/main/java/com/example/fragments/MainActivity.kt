@@ -1,5 +1,6 @@
 package com.example.fragments
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -16,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         openFragment(R.id.radio_buttons, RadioButtons())
         openFragment(R.id.message_fragment, MessageFragment())
+        binding.historyButton.setOnClickListener {
+            val intent = Intent(this, Statistics::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun openFragment(holderId: Int, fragment: Fragment) {
