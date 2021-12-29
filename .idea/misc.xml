@@ -3,10 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Fragments/app/src/main/res/layout/activity_main.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Fragments/app/src/main/res/layout/activity_statistics.xml" value="0.24818840579710144" />
-        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_message.xml" value="0.245018115942029" />
-        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Fragments/app/src/main/res/layout/fragment_radio_buttons.xml" value="0.4" />
+        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Lab4/app/src/main/res/layout/activity_audio.xml" value="0.536" />
+        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Lab4/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Sashko Makarenko/AndroidStudioProjects/Lab4/app/src/main/res/layout/activity_video.xml" value="0.14427083333333332" />
       </map>
     </option>
   </component>
